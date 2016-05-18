@@ -1,2 +1,15 @@
-spring.h2.console.enabled: true
-logging.level.org.hibernate.SQL: debug
+spring:
+  h2:
+    console:
+      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        enable_lazy_load_no_trans: true
+
+
+logging:
+  level:
+    org.hibernate.SQL: debug
